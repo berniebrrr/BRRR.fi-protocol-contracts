@@ -19,6 +19,7 @@ As our foundation relies on the money printer going BRRR, we have taken it as ou
 
 ## Interest Bearing Deposits. Continuously rebased supply to find price stability. Advanced Bonding Curve to drive price exploration.
 
+See the protocol documentation here: https://docs.brrr.fi 
 
 BRRR, BRRR3X and BRRR10X is an experimental protocol building upon the most advanced innovations in programmable money and DeFi. Built by a team of passionate patriots, BRRR combines memes and building a nation to provide financial freedom to our citizens.
 BRRR, BRRR3X, and BRRR10X are built to achieve:
