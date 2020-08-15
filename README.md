@@ -48,7 +48,7 @@ BRRR, BRRR3X and BRRR10X are dynamic supply cryptocurrencies which expands and c
 
 None. The developers have done their best to ensure the security of these contracts, which have been tested on testnet, but make no guarantees. There is a possibility - that there are bugs. Because of that, we have included emergency security protocols to ensure all deposits are safe and can be accessed, never lost. See below. 
 ```diff
-!  <b>The code is public and can be reviewed, --should be reviewed--, by you before using this experimental protocol. </b>
+! The code is public and can be reviewed, --should be reviewed--, by you before using this experimental protocol. 
 ```
 
 
@@ -71,11 +71,11 @@ Only the admin can activate the Emergency functions to disable all future deposi
 
 There are 3 main smart contracts for BRRR. BRRR, BRRR3X and BRRR10x. 
 ```
-BRRR
+BRRR - Address (mainnet): 
 
-BRRR3X
+BRRR3X -  Address (mainnet): 
 
-BRRR10x
+BRRR10x -  Address (mainnet): 
 ```
 
 
