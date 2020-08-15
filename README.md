@@ -57,7 +57,7 @@ None. The developers have done their best to ensure the security of these contra
 In the event of a major bug there are a series of functions defined to 
 ```
 1. Disabled all deposits
-2. All every user to withdrawal their deposits, without needing to pay/deposit BRRR back. 
+2. Allow every user to withdrawal their deposits, without needing to pay/deposit BRRR back. 
 ```
 
 Meaning at any point if there is a security issue, the contract can be turned off, and all deposits can be withdrawal by the depositer in full. 
