@@ -47,7 +47,13 @@ BRRR, BRRR3X and BRRR10X are dynamic supply cryptocurrencies which expands and c
 ## Audits
 
 None. The developers have done their best to ensure the security of these contracts, which have been tested on testnet, but make no guarantees. There is a possibility - that there are bugs. Because of that, we have included emergency security protocols to ensure all deposits are safe and can be accessed, never lost. See below. 
-
+```diff
+- text in red
++ text in green
+!  <b>The code is public and can be reviewed, --should be reviewed--, by you before using this experimental protocol. </b>
+# text in gray
+@@ text in purple (and bold)@@
+```
 <div class="text-orange mb-2">
   <b>The code is public and can be reviewed, --should be reviewed--, by you before using this experimental protocol. </b>
 </div>
