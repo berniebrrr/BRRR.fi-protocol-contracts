@@ -156,9 +156,9 @@ No parameters
 
 * * *
 
-###### DEFAULT_ADMIN_ROLE - read
+###### DEFAULT_ADMIN_ROLE - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Gets the admin role keccak hash
 
 No parameters
 
@@ -312,9 +312,9 @@ Returns:
 
 * * *
 
-###### FOUNDING_FATHER - read
+###### FOUNDING_FATHER - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Gets the founding father role keccak hash
 
 No parameters
 
@@ -354,9 +354,11 @@ Returns:
 
 * * *
 
-###### Online - read
+###### Online - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Returns if contract is online or offline.
+
+Required offline for emergency withdrawals. 
 
 No parameters
 
@@ -396,51 +398,9 @@ Returns:
 
 * * *
 
-###### TOTALCAP - read
+###### TOTALCAP - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
-
-No parameters
-
-Returns:
-
-<table class="table table-sm table-bordered table-striped">
-
-<thead>
-
-<tr>
-
-<th>Name</th>
-
-<th>Type</th>
-
-<th>Description</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-<td>uint256</td>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-* * *
-
-###### TreasuryReserve - read
-
-****Add Documentation for the method here****
+Max cap on total supply
 
 No parameters
 
@@ -480,9 +440,51 @@ Returns:
 
 * * *
 
-###### _acceptedStableCoins - read
+###### TreasuryReserve - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Amount left in the treasury
+
+No parameters
+
+Returns:
+
+<table class="table table-sm table-bordered table-striped">
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Type</th>
+
+<th>Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td></td>
+
+<td>uint256</td>
+
+<td></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+* * *
+
+###### _acceptedStableCoins - GET PUBLIC VARIABLE
+
+Returns the accepted stablecoins mapping
 
 <table class="table table-sm table-bordered table-striped">
 
@@ -552,9 +554,9 @@ Returns:
 
 * * *
 
-###### _all_Claim_ids - read
+###### _all_Claim_ids - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Returns the stimulus ids for each stimulus
 
 <table class="table table-sm table-bordered table-striped">
 
@@ -624,9 +626,9 @@ Returns:
 
 * * *
 
-###### _all_Claims - read
+###### _all_Claims - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Returns the stimulus information of whichever stimulus id is provided.
 
 <table class="table table-sm table-bordered table-striped">
 
@@ -716,9 +718,9 @@ Returns:
 
 * * *
 
-###### _all_supply_checks - read
+###### _all_supply_checks - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Stored history of supply checks for rebasing 
 
 <table class="table table-sm table-bordered table-striped">
 
@@ -798,9 +800,9 @@ Returns:
 
 * * *
 
-###### _circulatingSupply - read
+###### _circulatingSupply - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Current circulating supply
 
 No parameters
 
@@ -840,9 +842,9 @@ Returns:
 
 * * *
 
-###### _claimed_stimulus - read
+###### _claimed_stimulus - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Claimed stimulus by user
 
 <table class="table table-sm table-bordered table-striped">
 
@@ -922,9 +924,9 @@ Returns:
 
 * * *
 
-###### _coin_deposits - read
+###### _coin_deposits - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Deposits by user address
 
 <table class="table table-sm table-bordered table-striped">
 
@@ -953,78 +955,6 @@ Returns:
 <td></td>
 
 </tr>
-
-<tr>
-
-<td></td>
-
-<td>address</td>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-Returns:
-
-<table class="table table-sm table-bordered table-striped">
-
-<thead>
-
-<tr>
-
-<th>Name</th>
-
-<th>Type</th>
-
-<th>Description</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td></td>
-
-<td>uint256</td>
-
-<td></td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-* * *
-
-###### _deposits_eth - read
-
-****Add Documentation for the method here****
-
-<table class="table table-sm table-bordered table-striped">
-
-<thead>
-
-<tr>
-
-<th>Name</th>
-
-<th>Type</th>
-
-<th>Description</th>
-
-</tr>
-
-</thead>
-
-<tbody>
 
 <tr>
 
@@ -1076,9 +1006,81 @@ Returns:
 
 * * *
 
-###### _total_withdrawals - read
+###### _deposits_eth - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+ETH deposits by user's address
+
+<table class="table table-sm table-bordered table-striped">
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Type</th>
+
+<th>Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td></td>
+
+<td>address</td>
+
+<td></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+Returns:
+
+<table class="table table-sm table-bordered table-striped">
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Type</th>
+
+<th>Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td></td>
+
+<td>uint256</td>
+
+<td></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+* * *
+
+###### _total_withdrawals - GET PUBLIC VARIABLE
+
+Withdrawals per user 
 
 <table class="table table-sm table-bordered table-striped">
 
@@ -1568,9 +1570,9 @@ Returns:
 
 * * *
 
-###### brrr10x - read
+###### brrr10x - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Address of 10x contract
 
 No parameters
 
@@ -1610,9 +1612,9 @@ Returns:
 
 * * *
 
-###### brrr3x - read
+###### brrr3x - GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Address of 3x contract
 
 No parameters
 
@@ -1694,9 +1696,9 @@ Returns:
 
 * * *
 
-###### calculateCurve - read
+###### calculateCurve -  GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Returns current price of BRRR in gwei based off bonding curve 
 
 No parameters
 
@@ -1894,7 +1896,7 @@ Returns:
 
 ###### decimals - read
 
-****Add Documentation for the method here****
+ERC20 decimals 
 
 No parameters
 
@@ -2966,9 +2968,9 @@ Returns:
 
 * * *
 
-###### tether - read
+###### tether -  GET PUBLIC VARIABLE
 
-****Add Documentation for the method here****
+Address of USDT contract
 
 No parameters
 
