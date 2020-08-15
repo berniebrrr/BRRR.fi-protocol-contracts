@@ -67,23 +67,14 @@ No funds can be lost in the contract in the event of a bug. We hope. The code is
 Only the admin can activate the Emergency functions to disable all future deposits and if the contract is offline, all deposits are automatically able to be withdrawal by the person who deposited them. See the code in this repo, or the docs below for those functions. 
 
 ## Continuous Rebases
-Rebases are controlled by an external contract called the Rebaser. This is comparable to Ampleforth's monetaryPolicy contract. It dictates how large the rebase is and what happens on the rebase. The YAM token just changes the supply based on what this contract provides it.
+Rebases are initiated by any user called the `brrrEvent()` function. If the block timestamp of the last supply check is not the current block timestamp, then it will fetch the totalSupply of USDT from Tether's contracts. 
 
-There are a requirements before rebases are active:
-• Liquid YAM/yCRV market
-• init_twap()
-• activate_rebasing()
+If the totalSupply is different from the last supply check, it will process the difference and reward the rebaser for updating the state with 1/1000th of the difference in supply. 
 
-Following the launch of the second pool, rebasing can begin its activation phase. This begins with init_twap() on the rebaser contract. Anyone can call this at anytime once there is a YAM/yCRV Uniswap V2 market. The oracle is designed to be 12 hours between checkpoints. Given that, 12 hours after init_twap() is called, anyone can call activate_rebasing(). This turns rebasing on, permanently. Now anyone can call rebase() when inRebaseWindow() == true;.
+If there is a difference, the total supply and the block time is stored in the supply_checks history for future checks. 
 
-In a rebase, the order of operations are:
-• ensure in rebase window
-• calculate how far off-price is from the peg
-• dampen the rebase by the rebaseLag
-• if positive calculate protocol mint amount
-• change scaling factor, (in/de)flating the supply
-• sync uniswap, mint, sell to uniswap, transfer excess YAM and bought yCRV to reserves
-• call any extra functions governance adds in the future (i.e. Balancer gulps)
+The difference is burned/minted depending on what USDT did, if it minted 300million USDT, BRRR burns 300million BRRR. And 300k BRRR goes to the rebaser. Visa verse for USDT burns.
+
 
 ## Smart contracts
 
