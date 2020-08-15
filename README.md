@@ -3,7 +3,7 @@
 </p>
 
 BRRR is an experiment, to attempt to tie a monetary policy to inversely match a peg and provide accrued interest from that movement of that peg. 
-As such, since our peg is the US dollar,
+As such, since our peg is the US dollar supply in USDT,
 <blockquote>
  BRRR is not an acronym, but an interjection resounding from the sound of U.S Federal Reserve printing press.
 
