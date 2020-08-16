@@ -3,7 +3,7 @@
 </p>
 
 BRRR is an experiment, to attempt to tie a monetary policy to inversely match a peg and provide accrued interest from that movement of that peg. 
-As such, since our peg is the US dollar supply in USDT,
+As such, since our peg is the US dollar supply in USDT:
 <blockquote>
  BRRR is not an acronym, but an interjection resounding from the sound of U.S Federal Reserve printing press.
 
@@ -21,33 +21,33 @@ As our foundation relies on the money printer going BRRR, we have taken it as ou
 
 See the protocol documentation here: https://docs.brrr.fi 
 
-BRRR, BRRR3X and BRRR10X is an experimental protocol building upon the most advanced innovations in programmable money and DeFi. Built by a team of passionate patriots, BRRR combines memes and building a nation to provide financial freedom to our citizens.
+BRRR, including BRRR3X and BRRR10X, is an experimental protocol building upon the most advanced innovations in programmable money and DeFi. Built by a team of passionate patriots, BRRR combines memes and nation building to provide financial freedom to our citizens.
 BRRR, BRRR3X, and BRRR10X are built to achieve:
 
 
-*  an inversely proportional supply pegged to USDT to seek eventual price stability.
+*  An inversely proportional supply pegged to USDT to seek eventual price stability.
 
-*   a treasury reserve to further support stability and provide swaps.
+*  A treasury reserve to further support stability and provide swaps.
 
 *  Completely secure smart contracts with fail switches in the event of any catastrophic bug so no deposited funds can even be lost.
 
-*   Continuous rebasing of the treasury reserves to drive price stability.
+*  Continuous rebasing of the treasury reserves to drive price stability.
 
-*   Mechanisms that incentivizes participation and reward good behavior.
+*  Mechanisms that incentivizes participation and reward good behavior.
 
-BRRR, BRRR3X and BRRR10X are dynamic supply cryptocurrencies which expands and contracts its supply in response to USDT's balance sheets, initially set to 10x the total supply of USDT, everytime USDT mints, or burns USDT, the exact same amount is inversely created or burnt on BRRR. (BRRR3x and 10x multiply the amount by their respective values to create higher risk higher reward exposures). This stability mechanism includes one key addition to existing elastic supply models such as Ampleforth: a continuously rebased total supply that rewards the rebaser for updating the supply. As soon as tether mints or burns, BRRR should be updated - as the mechanism allows for high level of financial rewards for doing so. Providing real time continuous rebases as USDT changes.
-
-
-
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea22941a7892469ab5d8f5f3d57e89b6"><span data-offset-key="ea22941a7892469ab5d8f5f3d57e89b6:0">We have built BRRR, BRRR3X, and BRRR10X to be a MVP monetary experiment, and there will not be an initial dapp at launch but instead require users to access the contracts directly via Etherscan. The price of BRRR, BRRR3X and BRRR10X is unknown, and should not be valued highly.</span> <span data-offset-key="ea22941a7892469ab5d8f5f3d57e89b6:1">**This is an experiment.** </span><span data-offset-key="ea22941a7892469ab5d8f5f3d57e89b6:2">After deployment, it is entirely dependent upon BRRR holders to determine its value and future use-case while they farm the yields.</span></span></span>
+BRRR, BRRR3X and BRRR10X are dynamic supply cryptocurrencies which expand and contract supply in response to USDT's balance sheets, initially set to 10x the total supply of USDT, everytime USDT mints or burns, the exact same amount is inversely created or burnt on BRRR. (BRRR3x and BRRR10x multiply the amount by their respective values to create higher risk higher reward exposures). This stability mechanism includes one key addition to existing elastic supply models such as Ampleforth: a continuously rebased total supply that rewards the rebaser for updating the supply. As soon as tether mints or burns, BRRR should be updated - as the mechanism allows for high level of financial rewards for doing so. Providing real time continuous rebases as USDT changes.
 
 
 
-# BRRR.fi smart contracts and protocol. 
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea22941a7892469ab5d8f5f3d57e89b6"><span data-offset-key="ea22941a7892469ab5d8f5f3d57e89b6:0">We have built BRRR, BRRR3X, and BRRR10X to be a MVP monetary experiment, and there will not be an initial dapp at launch but instead users access the contracts directly via Etherscan. The price of BRRR, BRRR3X and BRRR10X is unknown, and should not be valued highly.</span> <span data-offset-key="ea22941a7892469ab5d8f5f3d57e89b6:1">**This is an experiment.** </span><span data-offset-key="ea22941a7892469ab5d8f5f3d57e89b6:2">After deployment, it is entirely dependent upon BRRR holders to determine its value and future use-case while they farm the yields.</span></span></span>
+
+
+
+# BRRR.fi smart contracts and protocol.
 
 ## Audits
 
-None. The developers have done their best to ensure the security of these contracts, which have been tested on testnet, but make no guarantees. There is a possibility - that there are bugs. Because of that, we have included emergency security protocols to ensure all deposits are safe and can be accessed, never lost. See below. 
+None. The developers have done their best to ensure the security of these contracts, which have been tested on testnet, but make no guarantees. There is a possibility, no matter how low, that there are bugs. Because of that, we have included emergency security protocols to ensure all deposits are safe and can be accessed, never lost. See below. 
 ```diff
 ! The code is public and can be reviewed, --should be reviewed--, by you before using this experimental protocol. 
 ```
@@ -264,7 +264,7 @@ Returns:
 
 ###### EmergencyWithdrawalETH - read
 
-In case of emgergency - withdrawal all eth. * Contract must be offline *
+In case of emgergency - withdrawal all ETH. * Contract must be offline *
 
 No parameters
 
