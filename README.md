@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://some_place.com/image.png" />
+  <img src="https://s3.amazonaws.com/brrr.fi/assets/img/how-to-3-img.png" />
 </p>
 
 BRRR is an experiment, to attempt to tie a monetary policy to inversely match a peg and provide accrued interest from that movement of that peg. 
